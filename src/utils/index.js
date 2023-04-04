@@ -5,16 +5,16 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 //Generate html is required to create the markdown
-const generateHTML = require("./utils/generateHTML.js.js.js");
+const generateHTML = require("./utils/generateHTML.js");
 
 //The manager class is imported
-const Manager = require("./lib/manager.js.js.js");
+const Manager = require("./lib/manager.js");
 
 //The engineer class is imported
-const Engineer = require("./lib/engineer.js.js.js");
+const Engineer = require("./lib/engineer.js");
 
 //The intern class is imported
-const Intern = require("./lib/intern.js.js.js");
+const Intern = require("./lib/intern.js");
 
 //The employee is declared as an empty array
 const employees = [];
