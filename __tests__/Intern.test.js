@@ -1,14 +1,14 @@
-const Intern = require("../lib/intern");
+const Intern = require("../lib/intern.js");
 
 describe("Intern", () => {
     const mockIntern = {
         name: "Jeff",
         id: 333,
         email: "jeff@test.com",
-        github: "www.github.com/my_name_jeff",
+        school: "University of Miami",
     };
     describe("constructor tests", () => {
-        Test("should construct a new instance of an intern class", () => {
+        test("should construct a new instance of an intern class", () => {
          const intern = new Intern(mockIntern);
          expect(intern).toBeInstanceOf(Intern);
     });
@@ -18,7 +18,7 @@ describe("Intern", () => {
             name: "Jeff",
             id: 333,
             email: "jeff@test.com",
-            school: "Univeristy of Miami",
+            school: "University of Miami",
             role: "Intern",
          });
        });
@@ -41,7 +41,7 @@ describe("Intern", () => {
 
         test("should return github profile URL when the getSchool method is called", () => {
             const intern = new Intern(mockIntern);
-            expect(intern.getGithub()).toEqual("University of Miami");
+            expect(intern.getSchool()).toEqual("University of Miami");
         });
 
         test("should return intern role when the getRole method is called", () => {

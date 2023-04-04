@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 //Generate html is required to create the markdown
-const generateHTML = require("./utils/generateHTML.js");
+const generateHTML = require("./src/utils/generateHTML.js");
 
 //The manager class is imported
 const Manager = require("./lib/manager.js");
@@ -25,7 +25,7 @@ let isTeamComplete = false;
 //Validate input function prevents the user from inputting an empty string for any questions
 const validateInput = (userInput) => {
     if (userInput === ""){
-        return "please type your answer before proceeding";
+        return "please provide an answer to continue";
     } else {
         return true;
     }

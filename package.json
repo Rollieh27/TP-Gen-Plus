@@ -1,5 +1,31 @@
 {
+  "name": "tp-gen-plus",
+  "description": "[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\r # TP Gen Plus\r   DEMO VIDEO LINK: TBD\r   ## Table of Contents\r   * [Description](#description)\r   * [Usage](#usage)\r   * [License](#license)\r   * [Contribution](#contribution)\r   * [Tests](#tests)\r   * [Questions](#questions)\r   ## DESCRIPTION \r   Write a team profile using this CLI application\r   ## INSTALLATION \r   npm i inquirer@8.2.4<br>\r   npm i jest\r   ## USAGE \r   This will help simplify the process of generating your profile for your team members\r   ## LICENSE \r   MIT\r   ## CONTRIBUTION \r   Any pulls for corrected and/or improvements will be gladly appreciated :)\r   ## TESTS \r   npm run test\r   ## QUESTIONS \r   ### Reach me at:\r   #### Github: [Rollieh27](github.com/Rollieh27)<br>\r   #### Email: Rollieh27@gmail.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "index.js"
+  },
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rollieh27/TP-Gen-Plus.git"
+  },
+  "keywords": [
+    "team",
+    "profile",
+    "generator"
+  ],
+  "author": "Rollie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rollieh27/TP-Gen-Plus/issues"
+  },
+  "homepage": "https://github.com/Rollieh27/TP-Gen-Plus#readme"
 }

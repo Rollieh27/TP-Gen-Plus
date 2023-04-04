@@ -1,4 +1,4 @@
-const Manager = require("../lib/manager");
+const Manager = require("../lib/manager.js");
 
 describe("Manager", () => {
     const mockManager = {
@@ -8,7 +8,7 @@ describe("Manager", () => {
         officeNumber: 666,
     };
     describe("constructor tests", () => {
-        Test("should construct a new instance of an manager class", () => {
+        test("should construct a new instance of an manager class", () => {
          const manager = new Manager(mockManager);
          expect(manager).toBeInstanceOf(Manager);
     });

@@ -1,4 +1,4 @@
-const Engineer = require("../lib/engineer");
+const Engineer = require("../lib/engineer.js");
 
 describe("Engineer", () => {
     const mockEngineer = {
@@ -8,7 +8,7 @@ describe("Engineer", () => {
         github: "www.github.com/jesting_around",
     };
     describe("constructor tests", () => {
-        Test("should construct a new instance of an engineer class", () => {
+        test("should construct a new instance of an engineer class", () => {
          const engineer = new Engineer(mockEngineer);
          expect(engineer).toBeInstanceOf(Engineer);
     });
