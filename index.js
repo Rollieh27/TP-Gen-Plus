@@ -1,18 +1,13 @@
 //Inquirer is imported to ask questions to the user to generate the team profile
 const inquirer = require("inquirer");
-
 //Fs is required to write the team profile file
 const fs = require("fs");
-
 //Generate html is required to create the markdown
 const generateHTML = require("./src/utils/generateHTML.js");
-
 //The manager class is imported
 const Manager = require("./lib/manager.js");
-
 //The engineer class is imported
 const Engineer = require("./lib/engineer.js");
-
 //The intern class is imported
 const Intern = require("./lib/intern.js");
 
@@ -52,7 +47,7 @@ const init = async () => {
         ];
 
     //The employee type object will be generated from the manager's answer to the employee type question
-    const { employeeType } = await inquirer.Prompt(employeeTypeQuestion);
+    const { employeeType } = await inquirer.prompt(employeeTypeQuestion);
 
     //If the manager clicks none on the employee type question, the team is complete
     if (employeeType === "none") {
@@ -121,6 +116,7 @@ const createManager = async () => {
 
     //The manager object is then pushed into the employees array
     employees.push(manager);
+    console.log(employees);
 };
 
 //The create engineer function
@@ -161,6 +157,7 @@ const createEngineer = async () => {
 
     //The engineer object is then pushed into the employees array
     employees.push(engineer);
+    console.log(employees);
 };
 //The create intern function
 const createIntern = async () => {
@@ -200,6 +197,7 @@ const createIntern = async () => {
 
     //The intern object is then pushed into the interns array
     employees.push(intern);
+    console.log(employees);
 };
 
 //Function call to initialize app

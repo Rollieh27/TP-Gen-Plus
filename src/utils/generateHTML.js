@@ -46,6 +46,7 @@ template = replaceTemplates(template, "role", manager.getRole());
 template = replaceTemplates(template, "email", manager.getEmail());
 template = replaceTemplates(template, "officeNumber", manager.getOfficeNumber());
 //The updated template is returned
+console.log();
 return template;
 };
 
@@ -96,7 +97,7 @@ const replaceTemplates = (template, placeholder, value) => {
     //The pattern are the values between the double curly brackets
     const pattern = new RegExp(`{{${placeholder}}}`, "gm");
     //The replace method will replace anything between the double curly bracket placeholders with the actual user-inputed values
-    return template.replace(patten, value);
+    return template.replace(pattern, value);
 };
 
 //Generate html is exported, so it can be accessed by the index.js file
