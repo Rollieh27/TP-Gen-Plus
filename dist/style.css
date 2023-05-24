@@ -1,0 +1,23 @@
+body {
+    background-color: lightgray;
+}
+
+header {
+    color: #a79ab0;
+}
+
+main {
+    align-items: center;
+}
+.card {
+    width: 20rem;
+    border-radius: 10px;
+}
+
+.list-group-item {
+    background-color: lightgray;
+}
+
+footer {
+    background-color: #a79ab0;
+}

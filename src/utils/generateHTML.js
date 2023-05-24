@@ -19,12 +19,12 @@ const HTML = [];
   HTML.push(
     employees
     .filter((employee) => employee.getRole() === "Engineer")
-    .map((engineer) => renderManager(engineer))
+    .map((engineer) => renderEngineer(engineer))
   );
   HTML.push(
     employees
     .filter((employee) => employee.getRole() === "Intern")
-    .map((intern) => renderManager(intern))
+    .map((intern) => renderIntern(intern))
   );
 
   //console.log(HTML, "generateHTML.js");
